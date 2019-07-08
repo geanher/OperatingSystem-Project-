@@ -40,15 +40,15 @@ int main (){
     system("clear");
     printf("\n______Monitor de Via________\n\n");
     printf("\t-------------------------\n");
-    printf("via\t carros\t cola\t tiempo: %d \n",via[4]);
-    printf("0\t %d\t%d\n",via[0],via[6]);
-    printf("1\t %d\t%d\n",via[1],via[7]);
-    printf("2\t %d\t%d\n",via[2],via[8]);
-    printf("3\t %d\t%d\n",via[3],via[9]);
+    printf("via\t carros\t tiempo: %d \n",via[4]);
+    printf("0\t %d\t\n",via[0]);
+    printf("1\t %d\t\n",via[1]);
+    printf("2\t %d\t\n",via[2]);
+    printf("3\t %d\t\n",via[3]);
     fflush(stdout); 
     fflush(stdin);
     sleep(1);
-    via[4]++;
+    //via[4]++;
   }
 
   return 0;
