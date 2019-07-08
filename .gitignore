@@ -5,5 +5,9 @@ bower_components/
 build/
 dist/
 
+<<<<<<< HEAD
 *.o
+=======
+*.o 
+>>>>>>> 654fcf7a7cbbef0d148a42ada112ae842756553a
 *.out
