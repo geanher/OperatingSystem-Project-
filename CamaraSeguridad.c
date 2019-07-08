@@ -17,9 +17,6 @@ Programa que monitoriza la llegada de los carros y las muestra
 
 void exit_signal(int);
 
-
-
-
 int main (){
 
   key_t idmemoria = ftok("/bin/gerly",0424);
@@ -39,10 +36,6 @@ int main (){
     via[i]=0;
   }
 
-
-  //----------------------------------------------
-  
-  //while(via[4] != via[5]){
   while(1){
     system("clear");
     printf("\n______Monitor de Via________\n\n");
@@ -52,31 +45,12 @@ int main (){
     printf("1\t %d\t%d\n",via[1],via[7]);
     printf("2\t %d\t%d\n",via[2],via[8]);
     printf("3\t %d\t%d\n",via[3],via[9]);
-    //cout<<"gener: "<< gener<<endl;
-
-    //usleep (10000000) ;
     fflush(stdout); 
     fflush(stdin);
-    //cout<<"t2 = "<<t2<<endl;
-    //desencolar();
     sleep(1);
     via[4]++;
   }
 
-
-//----------------------------------------------------
-  /* 
-  while (1){
-    system("clear");
-    printf("\n_______________________  Tablero de juego %d_______________________\n\n", monpid);
-    printf("\tJugador Mov. \t PID\n");
-    printf("\t-------------------------\n");
-    printf(" \t%d\t%d\t%d\n", via[0],via[1], via[2] ); 
-    printf(" \t%d\t%d\t%d\n", via[3],via[4], via[5] ); 
-    usleep (3000000) ;
-    fflush(stdout); 
-    fflush(stdin);
-  }*/
   return 0;
 }
 
