@@ -5,6 +5,7 @@
   SISTEMAS OPERATIVOS 
 
   Proyecto final Sistemas Operativos
+  Programa que Genera automoviles de forma aleatoria y los agrega a las diferentes vias 
 */
 
 #include <stdio.h>
