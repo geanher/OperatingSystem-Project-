@@ -4,7 +4,8 @@
   ING DE SISTEMAS
   SISTEMAS OPERATIVOS 
 
-  1ER EJERCICIO (Ping-Pong con Memoria compartida)
+Proyecto Final Sistemas Operativos 
+Programa que monitoriza la llegada de los carros y las muestra
 */
 
 #include <stdio.h>
@@ -44,7 +45,7 @@ int main (){
   //while(via[4] != via[5]){
   while(1){
     system("clear");
-    printf("\n______  Tablero de juego________\n\n");
+    printf("\n______Monitor de Via________\n\n");
     printf("\t-------------------------\n");
     printf("via\t carros\t cola\t tiempo: %d \n",via[4]);
     printf("0\t %d\t%d\n",via[0],via[6]);
