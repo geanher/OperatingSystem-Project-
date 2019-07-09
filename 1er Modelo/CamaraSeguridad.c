@@ -8,6 +8,15 @@ Proyecto Final Sistemas Operativos
 Programa que monitoriza la llegada de los carros y las muestra
 */
 
+
+/**
+* @file CamaraSeguridad.c
+* @Author Gerly Andres Hernandez
+* @version 1.0
+* @date 09/07/2019
+* @title Monitor de Via
+* @brief Monitorizacion de la via  
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -15,6 +24,10 @@ Programa que monitoriza la llegada de los carros y las muestra
 #include <sys/shm.h>
 #include <signal.h>
 
+/**
+* @brief Procedimiento necesario para salir
+* @param INT numero de señal
+*/
 void exit_signal(int);
 
 int main (){

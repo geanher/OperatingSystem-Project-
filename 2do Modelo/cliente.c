@@ -21,6 +21,7 @@ int main(int argc, char **argv){
   }
   int Port, Connect;
   char str[200];
+  int flags;
   //int str;
   struct sockaddr_in Client;
   struct hostent *server; 
@@ -40,15 +41,18 @@ int main(int argc, char **argv){
     return -1;
   }
   system ("clear");
-  for(int i=0; i<100; i++){
+  do{
+        fflush(stdout); 
+    fflush(stdin);
+
     printf("Escriba porque via entra el carro(0/1/2/3): ");
     scanf ("%s",str);
-    //str=rand()%5;
-    //printf("enviare : %s",str);
     send(Connect, str, sizeof(str), 0);
     recv(Connect, str, sizeof(str), 0);
     printf("%s\n", str);
-  }
+    printf("desea agregar otro carro?(0/1)");
+    scanf("%d", &flags);
+  }while ((flags != 0) && (flags = 1));
   close(Connect);
   return 0;
 }

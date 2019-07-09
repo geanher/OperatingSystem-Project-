@@ -8,6 +8,15 @@
   Programa que Genera automoviles de forma aleatoria y los agrega a las diferentes vias 
 */
 
+
+/**
+* @file Automovil.c
+* @Author Gerly Andres Hernandez
+* @version 1.0
+* @date 09/07/2019
+* @title Generador de Automoviles
+* @brief Implementacion y generacion de carros aleatorios 
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -15,9 +24,11 @@
 #include <sys/shm.h>
 #include <signal.h>
 
-//------------------------------------------------------------------
 int idvia,tv11,tv12,tv21,tv22,tv31,tv32,tv01,tv02;
-
+/**
+* @brief encolar autos en las diferentes vias
+* @param la memoria compartida 
+*/
 void encolar(int *via){
     fflush(stdout); 
             fflush(stdin);
@@ -30,7 +41,6 @@ void encolar(int *via){
             via[0]++;
         }
         printf("encolo en 0\n");
-        //cout<<"via[0]:"<<via[0]<<" cola0: "<<via[6]<<" tv1: "<<tv01<<" tiempo en tv2 "<<tv02<<endl;
     }
     else if((idvia==1) && (via[0]==0) && via[2]==0 && via[3]==0){
         if (via[1]==0){
@@ -41,7 +51,6 @@ void encolar(int *via){
             via[2]++;
         }
         printf("encolo en 1\n");
-        //cout<<"via[2]:"<<via[2]<<" cola2: "<<via[8]<<" tv1: "<<tv21<<" tiempo en tv2 "<<tv22<<endl;        
     }
 
     else if((idvia==2) && (via[0]==0) && via[1]==0 && via[3]==0){
@@ -53,7 +62,6 @@ void encolar(int *via){
             via[2]++;
         }
         printf("encolo en 2\n");
-        //cout<<"via[2]:"<<via[2]<<" cola2: "<<via[8]<<" tv1: "<<tv21<<" tiempo en tv2 "<<tv22<<endl;        
     }
 
     else if((idvia==3) && (via[0]==0) && via[1]==0 && via[2]==0){
@@ -65,11 +73,14 @@ void encolar(int *via){
             via[3]++;
         }
         printf("encolo en 3\n");
-        //cout<<"via[3]:"<<via[3]<<" cola3: "<<via[9]<<" tv1: "<<tv31<<" tiempo en tv2 "<<tv32<<endl;
     }
   
 
 }
+/**
+* @brief Desencolar los autos cada 3 seg luego de haber entrado en la via
+* @param la memoria compartida 
+*/
 void desencolar(int *via){
     fflush(stdout); 
     fflush(stdin);
@@ -95,7 +106,6 @@ void desencolar(int *via){
     }
 }
 
-//-----------------------------------------------------------------------------
 
 int main (){
   srand(getpid());

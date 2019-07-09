@@ -1,0 +1,94 @@
+\hypertarget{_automovil_8c}{}\section{Automovil.\+c File Reference}
+\label{_automovil_8c}\index{Automovil.\+c@{Automovil.\+c}}
+
+
+Implementacion y generacion de carros aleatorios.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+{\ttfamily \#include $<$sys/shm.\+h$>$}\newline
+{\ttfamily \#include $<$signal.\+h$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_automovil_8c_abb8f31d0d0efc9e32733238eba6c9b24}{encolar} (int $\ast$via)
+\begin{DoxyCompactList}\small\item\em encolar autos en las diferentes vias \end{DoxyCompactList}\item 
+void \hyperlink{_automovil_8c_a483da12278422807a8a58d815cd8f0a6}{desencolar} (int $\ast$via)
+\begin{DoxyCompactList}\small\item\em Desencolar los autos cada 3 seg luego de haber entrado en la via. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{_automovil_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{_automovil_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+int {\bfseries main} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_automovil_8c_adff131f72119257d4c6fcc35d36c8776}\label{_automovil_8c_adff131f72119257d4c6fcc35d36c8776}} 
+int {\bfseries idvia}
+\item 
+\mbox{\Hypertarget{_automovil_8c_afdb09d6dec21a04a7f5a1cb7a5d8c750}\label{_automovil_8c_afdb09d6dec21a04a7f5a1cb7a5d8c750}} 
+int {\bfseries tv11}
+\item 
+\mbox{\Hypertarget{_automovil_8c_a3ac3a88327e4fb296088148f2c99edac}\label{_automovil_8c_a3ac3a88327e4fb296088148f2c99edac}} 
+int {\bfseries tv12}
+\item 
+\mbox{\Hypertarget{_automovil_8c_a01e29ebda07b4d476d3af7a96eb2b12a}\label{_automovil_8c_a01e29ebda07b4d476d3af7a96eb2b12a}} 
+int {\bfseries tv21}
+\item 
+\mbox{\Hypertarget{_automovil_8c_a6e0a806ab458cc89c608038320f4053a}\label{_automovil_8c_a6e0a806ab458cc89c608038320f4053a}} 
+int {\bfseries tv22}
+\item 
+\mbox{\Hypertarget{_automovil_8c_ac0c23b95a1877cec474360d90e2bb796}\label{_automovil_8c_ac0c23b95a1877cec474360d90e2bb796}} 
+int {\bfseries tv31}
+\item 
+\mbox{\Hypertarget{_automovil_8c_a6ad809c48b6e0467d09add2fdcbdd5d3}\label{_automovil_8c_a6ad809c48b6e0467d09add2fdcbdd5d3}} 
+int {\bfseries tv32}
+\item 
+\mbox{\Hypertarget{_automovil_8c_a4af88062577b27ffc81e91da81a3aaf1}\label{_automovil_8c_a4af88062577b27ffc81e91da81a3aaf1}} 
+int {\bfseries tv01}
+\item 
+\mbox{\Hypertarget{_automovil_8c_a2817e651ccb8c5cc71074eeefa7ff45f}\label{_automovil_8c_a2817e651ccb8c5cc71074eeefa7ff45f}} 
+int {\bfseries tv02}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implementacion y generacion de carros aleatorios. 
+
+Gerly Andres Hernandez \begin{DoxyDate}{Date}
+09/07/2019 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_automovil_8c_a483da12278422807a8a58d815cd8f0a6}\label{_automovil_8c_a483da12278422807a8a58d815cd8f0a6}} 
+\index{Automovil.\+c@{Automovil.\+c}!desencolar@{desencolar}}
+\index{desencolar@{desencolar}!Automovil.\+c@{Automovil.\+c}}
+\subsubsection{\texorpdfstring{desencolar()}{desencolar()}}
+{\footnotesize\ttfamily void desencolar (\begin{DoxyParamCaption}\item[{int $\ast$}]{via }\end{DoxyParamCaption})}
+
+
+
+Desencolar los autos cada 3 seg luego de haber entrado en la via. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em la} & memoria compartida \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_automovil_8c_abb8f31d0d0efc9e32733238eba6c9b24}\label{_automovil_8c_abb8f31d0d0efc9e32733238eba6c9b24}} 
+\index{Automovil.\+c@{Automovil.\+c}!encolar@{encolar}}
+\index{encolar@{encolar}!Automovil.\+c@{Automovil.\+c}}
+\subsubsection{\texorpdfstring{encolar()}{encolar()}}
+{\footnotesize\ttfamily void encolar (\begin{DoxyParamCaption}\item[{int $\ast$}]{via }\end{DoxyParamCaption})}
+
+
+
+encolar autos en las diferentes vias 
+
+
+\begin{DoxyParams}{Parameters}
+{\em la} & memoria compartida \\
+\hline
+\end{DoxyParams}

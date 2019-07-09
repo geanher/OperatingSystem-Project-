@@ -6,7 +6,10 @@
 
   2do modelo Sistemas operativos
   */
-
+/**
+ * @author Gerly Andres
+ *
+ */
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
@@ -59,6 +62,7 @@ int main(int argc, char **argv){
     return -1;
   }
   system("clear");
+  printf("Esperando por llegada de auto");
   for (int i=2; i<100; i++){
 	  if(recv(ClientConnect, str, 200, 0) < 0){ 
 	    printf("Parece que hubo un error, No se pudo recibir un msj\n");
@@ -147,7 +151,7 @@ int main(int argc, char **argv){
         printf("\ndesencoló via[3]\n");
     }
 
-    system("clear");
+        system("clear");
     printf("\t\n______Monitor de Via________\n\n");
     printf("\t----------------------\n");
     printf("\t|  via |\tcarros\n" );
@@ -156,6 +160,7 @@ int main(int argc, char **argv){
     printf("\t|  1   |\t %d\n",one);
     printf("\t|  2   |\t %d\n",two);
     printf("\t|  3   |\t %d\n",three);
+
     fflush(stdout); 
     fflush(stdin);
     //sleep(1);
