@@ -15,6 +15,7 @@ Programa que monitoriza la llegada de los carros y las muestra
 * @version 1.0
 * @date 09/07/2019
 * @title Monitor de Via
+* @brief Ejecutar Primer la camara de seguridad y luego generar los autos con automovil.out
 * @brief Monitorizacion de la via  
 */
 #include <stdio.h>

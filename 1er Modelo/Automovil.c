@@ -15,6 +15,7 @@
 * @version 1.0
 * @date 09/07/2019
 * @title Generador de Automoviles
+* @brief Ejecutar Primer la camara de seguridad y luego generar los autos con automovil.out
 * @brief Implementacion y generacion de carros aleatorios 
 */
 #include <stdio.h>
@@ -148,8 +149,5 @@ via[4]=1;
             
         }
     }
-
-
-//----------------------------------------------------
   return 0;
 }
